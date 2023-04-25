@@ -1,0 +1,392 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+:root{
+	--main-color:#60bab1;
+	--main-to-color:#606060;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+}
+body{background-color: #eee;}
+main{
+	width:70%;
+	margin: 0 auto;
+	display: flex;
+}
+@media(max-width: 992px){
+	main{
+		width: 100%;
+		margin: 0;
+	}
+}
+aside{
+    margin-right: 10px;
+    width: 250px;
+	background-color: #fff;
+    text-transform: uppercase;
+}
+
+aside> .box{
+    position: sticky;
+    top: 0;
+}
+aside .box> img{
+	width:100%
+}
+aside .box> h2{
+    margin: 30px auto;
+    width: fit-content;
+}
+aside .box> ul{
+    margin-left: 20px;
+}
+aside .box> ul li{
+     margin: 10px 0;
+}
+aside .box> ul li i{
+       margin-right: 10px;
+    font-size: 25px;
+    color: var(--main-color);
+}
+aside .box> ul li span{
+    color: var(--main-color);
+}
+aside .cont> ul{
+       width: fit-content;
+    margin: 30px auto;
+}
+aside .cont> ul li{
+   display: inline-block;
+    margin: 0 10px;
+}
+aside .cont> ul li i{
+   color: var(--main-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+@media(max-width: 992px){
+	aside{
+		width: 50px;
+		text-align: center;
+	}
+	aside .box> ul li span{
+		display: none;
+	}
+	aside .box> h2{
+		display: none;
+	}
+	aside .box> ul{
+		margin-left: 0;
+	}
+	aside .cont> ul li{
+		    margin: 10px auto;
+	}
+}
+
+section{
+  position: relative;
+	width: calc(100% - 250px )
+}
+section> h1{
+	    text-transform: capitalize;
+    margin: 40px 50px;
+}
+section> ul::after{
+    content: '';
+    background-color: #0000005c;
+    height: 7px;
+    width: 90%;
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    border-radius: 10px;
+}
+section>ul li{
+	text-transform: capitalize;
+    display: inline-block;
+    margin: 0 1px;
+    padding: 14px 20px;
+   
+}
+@media(max-width: 992px){
+	section{
+		width: calc(100% - 50px )
+	}
+	section> ul::after{
+		display:none;
+	}
+}
+section>ul li:not(:first-child){
+	background-color:#fff; 
+	cursor: pointer;
+	box-shadow: 0 0 1px 0px #000;
+}
+section>ul li:nth-child(2){
+	background-color:rgb(0 0 0 /50%);
+}
+section>ul li:hover{
+	background-color: #eee;
+}
+
+.main-page{
+     margin-top: 110px;
+	 display: flex;
+	 flex-wrap:wrap;
+}
+.box-main{
+    background-color: #fff;
+    flex-basis: 32%;
+    margin: 10px 5px;
+}
+.box-main .images img{
+    width: 100%;
+}
+
+.box-main .text{
+      text-transform: capitalize;
+}
+.box-main .text h2{
+      margin: 20px
+}
+.box-main .text p{
+      line-height: 1.7;
+    margin: 5px;
+    text-align: justify;
+}
+@media(max-width: 992px){
+	.main-page{
+		  margin-top: 50px;
+	}
+	.box-main{
+		    flex-basis: 48%;
+	}
+}
+@media(max-width: 762px){
+	.box-main{
+		    flex-basis: 100%;
+	}
+}
+
+.majid{
+	 margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	    background: teal;
+}
+.najd> a{
+	 padding: 0px 6px;
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+}
+.najd> a:nth-child(2){
+	background-color:#000;
+}
+.najd> a:hover{
+		background-color:#000;
+}
+.about{
+	
+}
+.about .images-about > img{
+	width:49%;
+	display: inline-block;
+}
+.about> h2{
+	    margin: 15px;
+}
+.about> p{
+	    text-align: justify;
+}
+.about-majid{
+	    margin: 20px 0;
+}
+.about-majid h4{
+	margin: 10px;
+}
+.about-majid .parent{
+	    background-color: #ccc;
+		 height: 20px;
+		 margin: 10px 0;
+}
+.about-najd {
+    display: inline-block;
+    background-color: var(--main-color);
+	width: 200px;
+    height: 100%;
+}
+
+.about-majid> button{
+	    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: rgb(0 0 0 /50%);
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--main-color);
+}
+.about-majid> button i{
+	    margin: 0 5px 0 0;
+    font-size: 20px;
+}
+
+.about-box{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
+.about-box> .box{
+	flex-basis: 33%;
+    background-color: aliceblue;
+    text-transform: capitalize;
+    text-align: center;
+	    border: 1px solid #ccc;
+}
+.about-box> .box:nth-child(2) h2{
+	background-color:var(--main-color)
+}
+.about-box> .box > h2{
+	 padding: 40px;
+    background-color: #000000a8;
+	color: #fff;
+}
+.about-box> .box > p{
+	    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.about-box> .box > p button{
+	 outline: none;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    text-transform: uppercase;
+	 cursor: pointer;
+}
+.about-box> .box:nth-child(2):hover h2 ,
+.about-box> .box:nth-child(2):hover button{
+	background-color: #00ffe5;
+}
+.about-box> .box:not(:nth-child(2)):hover h2,
+.about-box> .box:not(:nth-child(2)):hover button{
+	  background-color: #000;color:#fff;
+}
+
+@media(max-width: 992px){
+	.about-box{
+			justify-content: left;
+	}
+.about-box> .box{
+		    flex-basis: 48%;
+	}
+}
+@media(max-width: 762px){
+		.about-box{
+			justify-content: left;
+	}
+	.about-box> .box{
+		    flex-basis: 100%;
+	}
+}
+.contact{
+background-color:#9e9e9e;
+
+}
+.contact h2{
+    text-transform: capitalize;
+    padding: 36px 5px;
+}
+.contact-icon{
+    display: flex;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding: 0 7px 20px;
+}
+.icon-box{
+    flex-basis: 34%;
+    padding: 20px 0;	
+}
+.icon-box i{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.icon-box:nth-child(1){
+	background-color: #616161;
+}
+.icon-box:nth-child(2){
+	background-color:var(--main-color)
+}
+.icon-box:nth-child(3){
+	background-color: #616161;
+}
+@media(max-width: 992px){
+	
+.contact-icon{
+		   flex-wrap: wrap;
+	}
+	.icon-box{
+		    flex-basis: 48%;
+	}
+}
+@media(max-width: 762px){
+	.icon-box{
+		    flex-basis: 100%;
+	}
+}
+form{
+    margin-top: 30px;
+    padding: 0 10px;
+}
+form label{
+	text-transform: capitalize;
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+}
+form input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+form button{
+	    outline: none;
+    border: none;
+    margin: 10px 0;
+    padding: 8px 10px;
+    text-transform: capitalize; 
+	cursor: pointer;
+}
+form button i{
+	    color: var(--main-color);
+        font-size: 30px;
+	  
+	
+}
+
+footer{
+	min-height: 100px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+}
+footer p{
+	
+}
+@media(max-width: 762px){
+	
+}
